@@ -1,17 +1,17 @@
 # 😴 Drowsiness Detection System
 
-A real-time driver drowsiness detection system using Python, OpenCV, and Dlib. This project uses facial landmark detection and Eye Aspect Ratio (EAR) to monitor a driver’s alertness and trigger an alarm if signs of drowsiness are detected.
+A real-time driver drowsiness detection system using Python, OpenCV, and Dlib. This project detects when a driver is becoming drowsy by analyzing eye movements using Eye Aspect Ratio (EAR), and plays an alert if drowsiness is detected.
 
 ---
 
 ## 🚗 Project Overview
 
-Drowsiness while driving is a major cause of road accidents. This project helps detect signs of fatigue in drivers and provides an alert to prevent potential mishaps.
+Drowsiness while driving is a major cause of road accidents. This project helps prevent such accidents by:
 
-It works by:
 - Monitoring the driver’s eye movement through a webcam
+- Using facial landmarks to detect eye openness
 - Calculating Eye Aspect Ratio (EAR)
-- Triggering an alarm if the eyes remain closed for too long
+- Playing a loud alarm if the eyes remain closed for too long
 
 ---
 
@@ -28,7 +28,7 @@ It works by:
 
 ## 🧪 How It Works
 
-The system uses Dlib’s 68-point facial landmark detector to find the driver’s eyes. It then calculates the Eye Aspect Ratio (EAR):
+The system uses Dlib’s 68-point facial landmark predictor to locate both eyes. Then it calculates the Eye Aspect Ratio (EAR) as follows:
 
 ```python
 def eye_aspect_ratio(eye):
