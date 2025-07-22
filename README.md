@@ -104,8 +104,8 @@ Make sure your webcam is connected.
 
 ## 👨‍💻 Author
 
-Syed Mahammad Aman
-Solo-developed and presented at a college expo.
+Syed Mahammad Aman  
+Presented at a college expo using an open-source Python + OpenCV project.
 
 ---
 
